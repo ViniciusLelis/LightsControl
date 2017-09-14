@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/white_corners">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:id="@+id/nomeLabel" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Endereço:"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:id="@+id/enderecoLabel" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zenficius"
+            android:textSize="15dp"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0A:1B:2C:3D:4E:5F"
+            android:textSize="15dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
