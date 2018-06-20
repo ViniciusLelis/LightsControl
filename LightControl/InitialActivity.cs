@@ -94,7 +94,8 @@ namespace LightControl
 
                         ParcelUuid[] uuids = device.GetUuids();
 
-                        // Obrigado StackOverflow por existir. Agradecimentos ao brother que comentou a linha de c�digo abaixo como solu��o para um problema filha da puta que eu estava tendo. Pareceu muito gambiarra a solu��o, mas funcionou que foi uma beleza
+                        // Obrigado StackOverflow por existir. Agradecimentos ao brother que comentou a linha de código abaixo como solução para um problema que eu estava tendo.
+                        // Foi preciso usar Reflection para acessar um método protected que curiosamente foi o único que funcionou para criar o socket Rfcomm
                         var socket = (BluetoothSocket)device.Class.GetMethod("createRfcommSocket", new Java.Lang.Class[] { Java.Lang.Integer.Type }).Invoke(device, 1);
 
                         Bluetooth.SetBluetoothSocket(socket);
